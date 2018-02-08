@@ -31,6 +31,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'jquery-rails'
 gem 'railties', '5.1.4'
+gem 'grape'
+gem 'mysql2'
+gem 'sprockets-rails'
+gem 'bootstrap'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
