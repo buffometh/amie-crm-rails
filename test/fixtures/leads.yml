@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_created: 2018-02-11
+  time_created: 2018-02-11 01:20:47
+  typeof: 1
+  email: MyString
+  phone: MyString
+  auditory: 1
+  where: 1
+  target: 1
+  bookingid: 1
+  managerid: 1
+  contactid: 1
+
+two:
+  date_created: 2018-02-11
+  time_created: 2018-02-11 01:20:47
+  typeof: 1
+  email: MyString
+  phone: MyString
+  auditory: 1
+  where: 1
+  target: 1
+  bookingid: 1
+  managerid: 1
+  contactid: 1
