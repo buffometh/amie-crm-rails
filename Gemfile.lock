@@ -157,6 +157,8 @@ GEM
       ffi (>= 0.5.0, < 2)
     ruby_dep (1.5.0)
     rubyzip (1.2.1)
+    russian (0.6.0)
+      i18n (>= 0.5.0)
     sass (3.5.5)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -219,6 +221,7 @@ DEPENDENCIES
   capybara (~> 2.13)
   coffee-rails (= 4.2.2)
   grape
+  i18n
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
@@ -227,6 +230,7 @@ DEPENDENCIES
   rails
   railties (= 5.1.4)
   rake
+  russian
   sass-rails (= 5.0.7)
   selenium-webdriver
   spring

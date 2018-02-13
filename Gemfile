@@ -36,6 +36,8 @@ gem 'mysql2'
 gem 'sprockets-rails'
 gem 'bootstrap'
 gem 'rake'
+gem 'russian'
+gem 'i18n'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

@@ -1,16 +1,14 @@
 <h1>New Lead</h1>
 
-<%= form_with scope: :leads, local: true do |form| %>
+<%= form_for @lead do |f| %>
+  <p>
+    <%= f.label :email %>
+    <%= f.text_field :email %><br>
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+  </p>
 
-<%= datetime_local_field(:lead, :calltime) %><br>
-<%= telephone_field(:lead, :phone) %>
-
-<br>
-
-    <%= form.label :text %><br>
-    <%= form.text_area :text %>
-<br>
-
-    <%= form.submit %>
-  </p>
+  <p>
+    <%= f.submit %>
+  </p>
 <% end %>

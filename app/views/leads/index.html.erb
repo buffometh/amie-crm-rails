@@ -1,1 +1,31 @@
-<h1>Index of leads</h1>
+
+<table class="table table-hover table-striped">
+  <thead>
+    <tr>
+      <th> Дата </th>
+      <th> Время </th>
+      <th> Тип обращения </th>
+      <th> E-MAIL </th>
+      <th> Телефон </th>
+      <th> Аудитория </th>
+      <th> Источник </th>
+      <th> Цель </th>
+    </tr>
+  </thead>
+  <tbody>
+    <%
+    @leads.each do |lead| %>
+        <tr>
+          <td> <%= lead.created_at.strftime("%d %B") %> </td>
+          <td> <%= lead.created_at.strftime("%H:%M") %> </td>
+          <td> <%= @typeoflead[lead.typeof.to_i] %> </td>
+          <td> <%= mail_to lead.email %> </td>
+          <td> <%= link_to lead.phone, "tel:#{lead.phone}" %> </td>
+          <td> <%= @auditory[lead.auditory.to_i] %> </td>
+          <td> <%= @where[lead.where.to_i] %> </td>
+          <td> <%= @target[lead.target.to_i] %> </td>
+        </tr>
+      <% end %>
+
+  </tbody>
+</table>
